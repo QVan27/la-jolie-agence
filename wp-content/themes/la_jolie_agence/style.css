@@ -79,5 +79,60 @@ table {
 /* COMMON CSS */
 a {
 	text-decoration: none;
+	color: black;
 }
+/* HEADER */
+#header .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f0f0f000;
+}
+#header .navbar .container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+#header .navbar .nav {
+	display: flex;
+	align-items: center;
+}
+#header .navbar .nav .nav-item {
+	margin: 0 30px;
+	text-align: center;
+	text-decoration: none;
+}
+.nav-item  {
+  position: relative; 
+ 
+
+}
+.nav-link  {
+  position: relative;
+  padding: 15px 0px;
+
+}
+.nav-link:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #F0394D;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+  }
+.nav-link:hover:after { 
+	width: 100%; 
+	left: 0; 
+  }
+  
+  
+
+
 /* END OF COMMON CSS */
