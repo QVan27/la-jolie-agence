@@ -72,6 +72,7 @@ function la_jolie_agence_scripts() {
 
 	// Flexslider .css
 	wp_enqueue_style( 'flexslider.css', get_template_directory_uri() . '/asset/css/flexslider.css', array(), _S_VERSION );
+	wp_enqueue_style( 'fontAwesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css', array(), _S_VERSION );
 
 	// jQuery
 	wp_deregister_script('jquery');

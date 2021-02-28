@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,8 +13,9 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -21,7 +23,26 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="wrap">
-	
-<!-- header -->
+	<?php wp_body_open(); ?>
+	<div id="wrap">
+
+		<!-- header -->
+		<header id="header">
+			<nav class="navbar">
+				<div class="container">
+					<a href="" class="nav-brand"><img src="" alt=" Logo" class="nav-logo"></a>
+					<ul class="nav">
+						<li class="nav-item"><a href="" class="nav-link">Accueil</a></li>
+						
+						<li class="nav-item"><a href="" class="nav-link">A propos</a></li>
+						
+						<li class="nav-item"><a href="" class="nav-link">Prestation</a></li>
+						
+						<li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+						
+						<li class="nav-item"><a href="" class="nav-link">Gallerie</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		

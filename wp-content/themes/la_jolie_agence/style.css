@@ -14,6 +14,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 /* RESET */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -74,13 +75,180 @@ table {
 	box-sizing: border-box;
 	/* Opera/IE 8+ */
 }
+
 /* END OF RESET */
 
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* FONT */
+
 /* COMMON CSS */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 }
+
 /* END OF COMMON CSS */
 
+/* HEADER */
 
+#header .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #f0f0f0;
+}
 
+#header .navbar .container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+#header .navbar .nav {
+	display: flex;
+	align-items: center;
+}
+
+#header .navbar .nav .nav-item {
+	margin: 0 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.nav-link {
+	position: relative;
+	padding: 15px 0px;
+}
+
+.nav-link:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #F0394D;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.nav-link:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+/* END OF HEADER */
+
+/* START BANNER */
+#banner {
+	min-width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.flexslider {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+.flexslider li {
+	max-height: 100vh;
+}
+
+.content {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 30%;
+}
+
+#save-the-date {
+	font-family: 'Pacifico';
+	width: 50%;
+	color: #fff;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 5em;
+	transform: rotate( -10deg);
+	overflow: hidden;
+}
+
+.pink-dot {
+	color: #f0394d;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.married {
+	width: 55%;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.married p {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 20px 0;
+	border-top: medium double #fff;
+	border-bottom: medium double #fff;
+	letter-spacing: 1.1px;
+}
+
+.white-line {
+	width: 10px;
+	height: 8px;
+	display: inline-block;
+	border-top: solid 1px #FFF;
+}
+
+.heart-divider {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pink-heart {
+	color: #f0394d;
+	font-size: 18px;
+	position: relative;
+	z-index: 4;
+}
+
+.white-heart {
+	color: #FFF;
+	font-size: 18px;
+	margin-left: -9px;
+	position: relative;
+	z-index: 3;
+}
+/* END OF BANNER */
