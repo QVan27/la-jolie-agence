@@ -34,7 +34,7 @@
 					<ul class="nav">
 						<li class="nav-item"><a href="" class="nav-link">Accueil</a></li>
 						
-						<li class="nav-item"><a href="" class="nav-link">A propos</a></li>
+						<li class="nav-item"><a href="" class="nav-link">À propos</a></li>
 						
 						<li class="nav-item"><a href="" class="nav-link">Prestation</a></li>
 						
