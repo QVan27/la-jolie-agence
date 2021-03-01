@@ -28,37 +28,39 @@
 
 		<!-- header -->
 		<header id="header">
+			
 			<nav class="navbar">
 				<div class="container">
 					<a href="" class="nav-brand"><img src="" alt=" Logo" class="nav-logo"></a>
 					<ul class="nav">
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link">Accueil</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('about')); ?>" class="nav-link">À propos</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('prestation')); ?>" class="nav-link">Prestation</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('contact')); ?>" class="nav-link">Contact</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('gallerie')); ?>" class="nav-link">Gallerie</a></li>
 					</ul>
 				</div>
 			</nav>
-			<!-- <nav class="navbar">
+
+			<nav id="navbar-js">
 				<div class="container">
 					<a href="" class="nav-brand"><img src="" alt=" Logo" class="nav-logo"></a>
 					<ul class="nav">
 						<li class="nav-item"><a href="" class="nav-link">Accueil</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="" class="nav-link">À propos</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="" class="nav-link">Prestation</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-						
+						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="" class="nav-link">Gallerie</a></li>
 					</ul>
 				</div>
-			</nav> -->
+			</nav>
 		</header>
 		

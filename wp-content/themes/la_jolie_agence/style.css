@@ -95,23 +95,52 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+	font-size: 40px;
+	margin: 20px auto;
+	text-transform: uppercase;
+	text-align: center;
+	color: #333333;
+}
+
 /* END OF COMMON CSS */
+
+/* STICKY FOOTER */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.wrap {
+	min-height: 100%;
+	/* Equal to height of footer */
+	/* But also accounting for potential margin-bottom of last child */
+	margin-bottom: -50px;
+}
+
+.footer, .push {
+	height: 50px;
+}
+
+/* END OF STICKY FOOTER */
 
 /* HEADER */
 
 #header .navbar {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #f0f0f0;
+	z-index: 10;
+	background-color: transparent;
 }
 
 #header .navbar .container {
 	height: 80px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0 15px;
 }
 
@@ -131,8 +160,12 @@ a {
 }
 
 .nav-link {
+	font-weight: bold;
+	color: #fff;
 	position: relative;
-	padding: 15px 0px;
+	padding: 5px 0px;
+	text-transform: uppercase;
+	font-size: 13px;
 }
 
 .nav-link:after {
@@ -153,9 +186,47 @@ a {
 	left: 0;
 }
 
+.nav .pink-heart {
+	font-size: 10px;
+}
+
+#navbar-js {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: #fff;
+}
+
+#navbar-js .container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px;
+}
+
+#navbar-js .nav {
+	display: flex;
+	align-items: center;
+}
+
+#navbar-js .nav-item {
+	margin: 0 30px;
+	text-align: center;
+	text-decoration: none;
+}
+#navbar-js .nav-link {
+	color: #666;
+	font-size: 13px;
+}
+
 /* END OF HEADER */
 
 /* START BANNER */
+
 #banner {
 	min-width: 100%;
 	margin: 0 auto;
@@ -251,4 +322,117 @@ a {
 	position: relative;
 	z-index: 3;
 }
+
 /* END OF BANNER */
+
+/* SECOND */
+
+#second {
+	padding: 140px 0 100px 0;
+}
+
+.box-content {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.box-content p {
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	text-align: center;
+	color: #6a6a6a;
+}
+
+.box-content .heart-divider .white-heart {
+	color: #e1dddd;
+}
+
+.box-content .heart-divider .grey-line {
+	width: 15px;
+	height: 8px;
+	color: #000;
+	margin-left: -15px;
+	display: inline-block;
+	border-top: solid 1px #FFF;
+}
+
+.description {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+/* .description img {
+	width: 100%;
+} */
+
+.overlay {
+	position: relative;
+	width: 100%;
+}
+
+.overlay img {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.overlay:hover .overlay img {
+	opacity: 0.3;
+}
+
+.overlay:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid;
+	padding: 10px 50px;
+	font-size: 16px;
+}
+
+.text:hover {
+	background-color: #f0394d;
+	color: #fff;
+	border: 1px solid #f0394d;
+}
+
+.link {
+	font-weight: 700;
+	color: #6a6a6a;
+}
+
+.description p {
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	color: #6a6a6a;
+}
+
+/* END OF SECOND */
+
+.footer {
+	background-color: #000;
+}

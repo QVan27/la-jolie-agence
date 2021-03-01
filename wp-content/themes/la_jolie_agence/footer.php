@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,10 +12,11 @@
 
 ?>
 <!-- footer -->
-	
+<div class="push"></div>
 </div><!-- #wrap -->
-
+<footer class="footer"></footer>
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
