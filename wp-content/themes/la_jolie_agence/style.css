@@ -119,9 +119,9 @@ html, body {
 	margin-bottom: -50px;
 }
 
-.footer, .push {
+/* .footer, .push {
 	height: 50px;
-}
+} */
 
 /* END OF STICKY FOOTER */
 
@@ -432,7 +432,62 @@ html, body {
 }
 
 /* END OF SECOND */
-
+/* START FOOTER */
 .footer {
-	background-color: #000;
+	background-color: #B07C4D;
+	padding: 50px 0;
+}
+.wrapper {
+	padding: 0;
+	text-align: center;
+}
+.minibox {
+	display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 32%;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+	color: #FFF;
+}
+.title-footer {
+	font-size: 1.5em;
+	margin: 0 auto 20px; 
+}
+
+.text-footer {
+	padding: 0 10px;
+	margin: 15px auto 0;
+	color: #fff;
+}
+hr {
+    width: 33%;
+    color: #fff;
+    height: 3px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 10%;
+}
+.vertical-footer {
+	border-left: 4px solid #FFFF;
+	height: 200px;
+	display: inline-block;
+}
+.fab {
+	padding: 2%;
+	color: #fff;
+}
+.fab  { 
+	transition: all .2s ease-in-out; 
+}
+.fab:hover { 
+	transform: scale(1.1); 
+}
+.box-call  { 
+	transition: all .2s ease-in-out; 
+}
+.box-call:hover { 
+	transform: scale(1.1); 
 }
