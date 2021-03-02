@@ -28,10 +28,15 @@
             <h3 class="title-footer">Contactez-nous</h3>
             <hr>
             <div class="box-call">
-                <i class="fas fa-phone-square-alt"></i><a class="text-footer" href="tel:+33711223344">O711223344</a>
-                <br>
-                <br>
-                <i class="fas fa-envelope"></i><a class="text-footer">LaJolieAgence@gmail.com</a>
+                <div class="contact1">
+                    <i class="fas fa-phone-square-alt"></i>
+                    <a class="text-footer" href="tel:+33711223344">O7 11 22 33 44</a>
+                </div>
+
+                <div class="contact2">
+                    <i class="fas fa-envelope"></i>
+                    <a href=mailto:LaJolieAgence@gmail.com"" class="text-footer">LaJolieAgence@gmail.com</a>
+                </div>
             </div>
 
         </div>

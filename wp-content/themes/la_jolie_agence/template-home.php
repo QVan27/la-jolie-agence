@@ -25,7 +25,7 @@ get_header(); ?>
         <ul class="slides">
             <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" /></li>
             <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" /></li>
-    		<li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides3.jpg'; ?>" /></li>
+            <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides3.jpg'; ?>" /></li>
             <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides4.jpg'; ?>" /></li>
         </ul>
     </div>
