@@ -22,4 +22,6 @@ $(window).load(function () {
       $(".navbar").fadeIn();
     }
   });
+
+  
 });
