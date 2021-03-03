@@ -1,5 +1,9 @@
 $(window).load(function () {
   // Parallax
+  $(".parallax-gallery").parallax({
+    imageSrc:
+      "../wp-content/themes/la_jolie_agence/asset/img/parallax.jpg",
+  });
  
 
 
@@ -8,10 +12,6 @@ $(window).load(function () {
 
 
 
-  $(".parallax-gallery").parallax({
-    imageSrc:
-      "../wp-content/themes/la_jolie_agence/asset/img/parallax.jpg",
-  });
 
   // Flexslider
   $(".flexslider").flexslider({

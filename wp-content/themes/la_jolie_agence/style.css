@@ -516,8 +516,9 @@ html, body {
 .parallax-gallery {
 	width: 100%;
 	max-height: 400px;
-	position: relative;
-	z-index: 1000;
+	/* position: relative;
+	z-index: 1000; */
+	background: transparent;
 }
 
 /* END OF GALLERY */
