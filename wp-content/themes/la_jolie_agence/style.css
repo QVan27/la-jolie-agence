@@ -645,9 +645,10 @@ hr {
 /* START ABOUT */
 
 #about {
-	transform: translate3d(0px, 0px, 0px);
+	/* transform: translate3d(0px, 0px, 0px); */
 	height: 500px;
 	max-width: 100%;
+	position: relative;
 }
 
 .content-about {
@@ -659,7 +660,7 @@ hr {
     z-index: 2;
     left: 0;
     right: 0;
-    top: 45%;
+    bottom: 10%;
 	color: #fff;
 	
 }

@@ -4,22 +4,23 @@ Template Name: About
 */
 get_header(); ?>
 
-<section id="about" class="parallax-window-about" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() . '/asset/img/parralax-about2.jpg' ?>"></section>
-<div class="content-about">
-    <div id="text-about">
-        <div id="save">La Jolie Agence</div>
+<section id="about" class="parallax-window-about" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() . '/asset/img/parralax-about2.jpg' ?>">
+    <div class="content-about">
+        <div id="text-about">
+            <div id="save">La Jolie Agence</div>
+        </div>
+        <div class="heart-divider">
+            <span class="white-line"></span>
+            <i class="fas fa-heart pink-heart"></i>
+            <i class="fas fa-heart white-heart"></i>
+            <span class="white-line"></span>
+        </div>
+        <div class="married">
+            <p>*** we are getting married ***</p>
+        </div>
     </div>
-    <div class="heart-divider">
-        <span class="white-line"></span>
-        <i class="fas fa-heart pink-heart"></i>
-        <i class="fas fa-heart white-heart"></i>
-        <span class="white-line"></span>
-    </div>
-    <div class="married">
-        <p>*** we are getting married ***</p>
-    </div>
-   
-</div>
+</section>
+
 <div class="bigbox-about">
     <div class="minibox-content">
 
