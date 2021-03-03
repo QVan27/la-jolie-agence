@@ -6,6 +6,18 @@ $(window).load(function () {
   $(".parallax-window-about").parallax({
     imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about.jpg",
   });
+  $(".parallax-gallery").parallax({
+    imageSrc:
+      "../wp-content/themes/la_jolie_agence/asset/img/parallax.jpg",
+  });
+ 
+
+
+
+
+
+
+
 
   // Flexslider
   $(".flexslider").flexslider({
@@ -25,4 +37,11 @@ $(window).load(function () {
       $(".navbar").fadeIn();
     }
   });
+
+  //   $('#gallery-link').click(function (e) {
+  //     e.preventDefault();
+
+  //     $('.navbar').css('display', 'none');
+  //     $('.navbar-link').css('display', 'block');
+  // })
 });
