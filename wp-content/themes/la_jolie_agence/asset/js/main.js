@@ -4,7 +4,10 @@ $(window).load(function () {
     imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg",
   });
   $(".parallax-window-about").parallax({
-    imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about.jpg",
+    imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about2.jpg",
+  });
+  $(".parallax-window-about").parallax({
+    imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about3.jpg",
   });
   $(".parallax-gallery").parallax({
     imageSrc:

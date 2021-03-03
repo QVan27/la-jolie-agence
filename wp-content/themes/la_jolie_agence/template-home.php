@@ -52,21 +52,22 @@ get_header(); ?>
 </section>
 
 <section id="third" class="parallax-window" data-parallax="scroll" data-image-src="wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg">
-<div class="content2">
-            <div id="save-the-date">
-                <div id="save">Save</div>
-                <div id="the-date">The Date</div>
-                <div id="date">- 19<span class="pink-dot">.</span>12<span class="pink-dot">.</span>16 -</div>
-            </div>
-            <div class="married">
-                <p>*** we are getting married ***</p>
-            </div>
-            <div class="heart-divider">
-                <span class="white-line"></span>
-                <i class="fas fa-heart pink-heart"></i>
-                <i class="fas fa-heart white-heart"></i>
-                <span class="white-line"></span>
-            </div>
+    <div class="content2">
+        <div id="save-the-date">
+            <div id="save">Save</div>
+            <div id="the-date">The Date</div>
+            <div id="date">- 19<span class="pink-dot">.</span>12<span class="pink-dot">.</span>16 -</div>
+        </div>
+        <div class="married">
+            <p>*** we are getting married ***</p>
+        </div>
+        <div class="heart-divider">
+            <span class="white-line"></span>
+            <i class="fas fa-heart pink-heart"></i>
+            <i class="fas fa-heart white-heart"></i>
+            <span class="white-line"></span>
+        </div>
+    </div>
 </section>
 <?php
 get_footer();

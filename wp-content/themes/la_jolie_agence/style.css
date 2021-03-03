@@ -625,6 +625,7 @@ hr {
     max-width: 100%;
 }
 .content-about {
+	text-align: center;
 	max-width: 750px;
     width: 100%;
     margin: 0 auto;
@@ -632,11 +633,57 @@ hr {
     z-index: 2;
     left: 0;
     right: 0;
-    top: 5%;
+    top: 45%;
 	color: #fff;
-}
-.title-about {
 	
+}
+
+#text-about {
+	font-family: 'Pacifico';
+	width: 50%;
+	color: #fff;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 5em;
+	
+	overflow: hidden;
+}
+.bigbox-about {
+	background-color: #f6f6f6;
+	padding-bottom: 10%;
+}
+.minibox-content {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box-reseaux  {
+	padding: 90px;
+	text-align: center;
+}
+.about {
+	color: #B07C4D;
+}
+.box-content-text {
+	display: flex;
+	margin: 0px 135PX;
+}
+.minibox-text {
+	width: 50%;
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.minibox-content p {
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	color: #6a6a6a
 }
 /* END ABOUT */
 .contact2:hover {
