@@ -35,7 +35,7 @@
 					<ul class="nav">
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link">Accueil</a></li>
 						<i class="fas fa-heart pink-heart"></i>
-						<li class="nav-item"><a href="<?php echo esc_url(home_url('about')); ?>" class="nav-link">À propos</a></li>
+						<li class="nav-item"><a href="<?php echo esc_url(home_url('a-propos')); ?>" class="nav-link">À propos</a></li>
 						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('prestation')); ?>" class="nav-link">Prestation</a></li>
 						<i class="fas fa-heart pink-heart"></i>

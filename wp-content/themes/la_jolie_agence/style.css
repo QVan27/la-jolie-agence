@@ -410,6 +410,7 @@ html, body {
 	border: 1px solid;
 	padding: 10px 50px;
 	font-size: 16px;
+	border-radius: 5px;
 }
 
 .text:hover {
@@ -432,6 +433,23 @@ html, body {
 }
 
 /* END OF SECOND */
+/* START THIRD */
+#third {
+    transform: translate3d(0px, 0px, 0px);
+    height: 500px;
+    max-width: 100%;
+}
+.content2 {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 5%;
+}
+/* END OF THIRD */
 /* START FOOTER */
 .footer {
 	background-color: #B07C4D;
@@ -491,3 +509,24 @@ hr {
 .box-call:hover { 
 	transform: scale(1.1); 
 }
+/* START ABOUT */
+#about {
+	transform: translate3d(0px, 0px, 0px);
+    height: 500px;
+    max-width: 100%;
+}
+.content-about {
+	max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 5%;
+	color: #fff;
+}
+.title-about {
+	
+}
+/* END ABOUT */
