@@ -35,14 +35,15 @@ get_header(); ?>
             </div>
         </div>
     </div>
+</section>
     <div class="parallax-gallery">
-        <div id="save-the-date">
-            <div id="save">Save</div>
-            <div id="the-date">The Date</div>
-            <div id="date">- 19<span class="pink-dot">.</span>12<span class="pink-dot">.</span>16 -</div>
+        <div id="jolie-agence">
+            <div id="save">La</div>
+            <div id="the-date">Jolie Agence <i class="fas fa-heart pink-heart"></i></div>
+            <!-- <div id="date">- 19<span class="pink-dot">.</span>12<span class="pink-dot">.</span>16 -</div> -->
         </div>
     </div>
-</section>
+
 
 
 
