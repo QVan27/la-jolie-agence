@@ -133,7 +133,7 @@ html, body {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 #header .navbar .container {
@@ -161,7 +161,7 @@ html, body {
 
 .nav-link {
 	font-weight: bold;
-	color: #666;
+	color: #fff;
 	position: relative;
 	padding: 5px 0px;
 	text-transform: uppercase;
@@ -190,7 +190,7 @@ html, body {
 	font-size: 10px;
 }
 
-#navbar-js {
+/* #navbar-js {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -222,7 +222,7 @@ html, body {
 #navbar-js .nav-link {
 	color: #666;
 	font-size: 13px;
-}
+} */
 
 /* .navbar-link {
 	display: none;

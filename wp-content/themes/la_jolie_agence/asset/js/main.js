@@ -33,11 +33,13 @@ $(window).load(function () {
   $(window).scroll(function () {
     // checks if window is scrolled more than 700px, hide/show --->  navbar / navbar-js
     if ($(this).scrollTop() > 700) {
-      $(".navbar").fadeOut();
-      $("#navbar-js").fadeIn();
+      $(".navbar").css( "position", "fixed");
+      $(".navbar").css( "background-color", "#fff");
+      $(".nav-link").css( "color", "#666");
     } else {
-      $("#navbar-js").fadeOut();
-      $(".navbar").fadeIn();
+      $(".navbar").css( "position", "absolute" );
+      $(".navbar").css( "background-color", "transparent" );
+      $(".nav-link").css( "color", "#fff" );
     }
   });
 
