@@ -608,6 +608,7 @@ hr {
 	border-left: 4px solid #FFFF;
 	height: 200px;
 	display: inline-block;
+	border-radius: 5px;
 }
 
 .fab {
