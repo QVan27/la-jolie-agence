@@ -85,6 +85,22 @@ table {
 /* FONT */
 
 /* COMMON CSS */
+html::-webkit-scrollbar {
+	width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -133,7 +149,7 @@ html, body {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: #fff;
+	background-color: transparent;
 }
 
 #header .navbar .container {
@@ -161,7 +177,7 @@ html, body {
 
 .nav-link {
 	font-weight: bold;
-	color: #666;
+	color: #fff;
 	position: relative;
 	padding: 5px 0px;
 	text-transform: uppercase;
@@ -190,7 +206,7 @@ html, body {
 	font-size: 10px;
 }
 
-#navbar-js {
+/* #navbar-js {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -222,7 +238,7 @@ html, body {
 #navbar-js .nav-link {
 	color: #666;
 	font-size: 13px;
-}
+} */
 
 /* .navbar-link {
 	display: none;
@@ -655,15 +671,14 @@ hr {
 .content-about {
 	text-align: center;
 	max-width: 750px;
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    bottom: 10%;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	bottom: 10%;
 	color: #fff;
-	
 }
 
 #text-about {
@@ -675,37 +690,43 @@ hr {
 	align-items: center;
 	flex-direction: column;
 	font-size: 5em;
-	
 	overflow: hidden;
 }
+
 .bigbox-about {
 	background-color: #f6f6f6;
 	padding-bottom: 10%;
 }
+
 .minibox-content {
 	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
-.box-reseaux  {
+
+.box-reseaux {
 	padding: 90px;
 	text-align: center;
 }
+
 .about {
 	color: #B07C4D;
 }
+
 .box-content-text {
 	display: flex;
 	margin: 0px 135PX;
 }
+
 .minibox-text {
 	width: 50%;
 	position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
+
 .minibox-content p {
 	font-size: 15px;
 	line-height: 26px;
@@ -713,7 +734,9 @@ hr {
 	margin-top: 20px;
 	color: #6a6a6a
 }
+
 /* END ABOUT */
+
 .contact2:hover {
 	transform: scale(1.1);
 }

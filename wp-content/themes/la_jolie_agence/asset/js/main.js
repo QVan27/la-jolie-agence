@@ -1,4 +1,7 @@
+
+
 $(window).load(function () {
+
   // Parallax
   $(".parallax-window").parallax({
     imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg",
@@ -14,14 +17,6 @@ $(window).load(function () {
       "../wp-content/themes/la_jolie_agence/asset/img/parallax.jpg",
   });
  
-
-
-
-
-
-
-
-
   // Flexslider
   $(".flexslider").flexslider({
     animation: "slide",
@@ -31,20 +26,22 @@ $(window).load(function () {
 
   // NAVBAR JS
   $(window).scroll(function () {
-    // checks if window is scrolled more than 700px, hide/show --->  navbar / navbar-js
+    // checks if window is scrolled more than 700px, hide/show --->  navbar
     if ($(this).scrollTop() > 700) {
-      $(".navbar").fadeOut();
-      $("#navbar-js").fadeIn();
+      $(".navbar").css( "position", "fixed");
+      $(".navbar").css( "background-color", "#fff");
+      $(".nav-link").css( "color", "#666");
     } else {
-      $("#navbar-js").fadeOut();
-      $(".navbar").fadeIn();
+      $(".navbar").css( "position", "absolute" );
+      $(".navbar").css( "background-color", "transparent" );
+      $(".nav-link").css( "color", "#fff" );
     }
   });
 
-  //   $('#gallery-link').click(function (e) {
-  //     e.preventDefault();
-
-  //     $('.navbar').css('display', 'none');
-  //     $('.navbar-link').css('display', 'block');
-  // })
 });
+
+// var scroll = new SmoothScroll('body', {
+//   speed: 500,
+//   speedAsDuration: true,
+//   // linear: true,
+// });

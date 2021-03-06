@@ -42,12 +42,12 @@ get_header(); ?>
     </div>
     <div class="description">
         <div class="overlay">
-            <img src="<?php echo get_template_directory_uri() . '/asset/img/married.jpg'; ?>" alt="">
+            <img src="<?= get_template_directory_uri() . '/asset/img/married.jpg'; ?>" alt="">
             <div class="middle">
-                <a href="<?php echo esc_url(home_url('about')); ?>" class="text">À propos</a>
+                <a href="<?= esc_url(home_url('a-propos')); ?>" class="text">À propos</a>
             </div>
         </div>
-        <p><a href="<?php echo esc_url(home_url('about')); ?>" class="link">Je suis "La Jolie Agence"</a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, esse laboriosam. Commodi nam similique reiciendis eveniet aliquam a facilis optio! Eius corporis veniam a, voluptatum eligendi, sit nulla fuga voluptatibus recusandae quasi necessitatibus eum sint numquam doloribus et aliquid alias.</p>
+        <p><a href="<?= esc_url(home_url('about')); ?>" class="link">Je suis "La Jolie Agence"</a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, esse laboriosam. Commodi nam similique reiciendis eveniet aliquam a facilis optio! Eius corporis veniam a, voluptatum eligendi, sit nulla fuga voluptatibus recusandae quasi necessitatibus eum sint numquam doloribus et aliquid alias.</p>
     </div>
 </section>
 

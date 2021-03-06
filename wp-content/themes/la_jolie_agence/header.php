@@ -28,10 +28,9 @@
 
 		<!-- header -->
 		<header id="header">
-
 			<nav class="navbar">
 				<div class="container">
-					<a href="" class="nav-brand"><img src="" alt=" Logo" class="nav-logo"></a>
+					<a href="<?= esc_url(home_url('/')); ?>" class="nav-brand"><img src="<?= get_template_directory_uri() . '/asset/img/logo-dark.png'?>" alt=" Logo" class="nav-logo"></a>
 					<ul class="nav">
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link">Accueil</a></li>
 						<i class="fas fa-heart pink-heart"></i>
@@ -45,6 +44,7 @@
 					</ul>
 				</div>
 			</nav>
+		</header>
 
 			<!-- <nav class="navbar-link">
 				<div class="container">
@@ -63,9 +63,9 @@
 				</div>
 			</nav> -->
 
-			<nav id="navbar-js">
+			<!-- <nav id="navbar-js">
 				<div class="container">
-					<a href="" class="nav-brand"><img src="" alt=" Logo" class="nav-logo"></a>
+				<a href="<?= esc_url(home_url('/')); ?>" class="nav-brand"><img src="<?= get_template_directory_uri() . '/asset/img/logo-dark.png'?>" alt=" Logo" class="nav-logo"></a>
 					<ul class="nav">
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link">Accueil</a></li>
 						<i class="fas fa-heart pink-heart"></i>
@@ -78,5 +78,4 @@
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('contact')); ?>" class="nav-link">Contact</a></li>
 					</ul>
 				</div>
-			</nav>
-		</header>
+			</nav> -->
