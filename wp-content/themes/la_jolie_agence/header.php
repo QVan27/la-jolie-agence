@@ -38,7 +38,7 @@
 						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('prestation')); ?>" class="nav-link">Prestation</a></li>
 						<i class="fas fa-heart pink-heart"></i>
-						<li class="nav-item" id="gallery-link"><a href="<?php echo esc_url(home_url('gallerie')); ?>" class="nav-link">Gallerie</a></li>
+						<li class="nav-item" id="gallery-link"><a href="<?php echo esc_url(home_url('galerie')); ?>" class="nav-link">Gallerie</a></li>
 						<i class="fas fa-heart pink-heart"></i>
 						<li class="nav-item"><a href="<?php echo esc_url(home_url('contact')); ?>" class="nav-link">Contact</a></li>
 					</ul>
