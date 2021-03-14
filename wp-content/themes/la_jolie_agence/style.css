@@ -521,29 +521,39 @@ html, body {
 /* END OF THIRD */
 
 /* GALLERY */
+#parallax {
 
-#gallery {
-	padding: 220px 0 120px 0;
-	background-color: #f6f6f6;
-}
-
-.gallery-content {
-	max-width: 750px;
-	width: 100%;
-	margin: 0 auto;
+		/* transform: translate3d(0px, 0px, 0px); */
+		height: 350px;
+		max-width: 100%;
+		position: relative;
+	
 }
 
 .page-title {
 	text-align: center;
+	color: #fff;
+	padding-top: 90px;
+}
+.page-title h1 {
+	font-family: 'Pacifico';
+	color: #fff;
+	font-size: 5em;
 }
 
-.gallery-img {
-	/* height: 750px; */
-	margin: 30px auto;
+.gallery {
+	margin: 10px 50px;
 }
 
-.gallery-img img {
-	margin: 20px 0;
+.gallery img {
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+
+.gallery img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
 }
 
 .boxImg1, .boxImg2, .boxImg3 {
@@ -553,7 +563,7 @@ html, body {
 
 .parallax-gallery {
 	width: 100%;
-	min-height: 500px;
+	min-height: 300px;
 	position: relative;
 	/* z-index: 1000; */
 	background: transparent;

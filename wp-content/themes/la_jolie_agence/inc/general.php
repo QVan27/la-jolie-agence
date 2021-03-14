@@ -75,6 +75,8 @@ function la_jolie_agence_scripts()
 	wp_enqueue_style('animate.css', get_template_directory_uri() . '/asset/css/animate.css', array(), _S_VERSION);
 	// Flexslider .css
 	wp_enqueue_style('flexslider.css', get_template_directory_uri() . '/asset/css/flexslider.css', array(), _S_VERSION);
+	// LightBox .css
+	wp_enqueue_style('lightBox.css', get_template_directory_uri() . '/asset/css/lightbox.min.css', array(), _S_VERSION);
 	// FontAwesome
 	wp_register_style( 'Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' );
 	wp_enqueue_style('Font_Awesome');
@@ -88,6 +90,8 @@ function la_jolie_agence_scripts()
 	// Plugins
 	// Flexslider .js
 	wp_enqueue_script('flexSliderJs', get_template_directory_uri() . '/asset/js/flexslider-min.js', array(), '1.0.2', true);
+	// LightBox .js
+	wp_enqueue_script('lightBox', get_template_directory_uri() . '/asset/js/lightbox.min.js', array(), '1.0.2', true);
 	// Parallax .js
 	wp_enqueue_script('parallaxJs', get_template_directory_uri() . '/asset/js/parallax.js', array(), '1.0.2', true);
 	// Smooth Scroll 
