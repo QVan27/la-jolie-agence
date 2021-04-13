@@ -9,12 +9,12 @@ get_header(); ?>
         <div id="text-about">
             <div id="save">La Jolie Agence</div>
         </div>
-        <div class="heart-divider">
+        <!-- <div class="heart-divider">
             <span class="white-line"></span>
             <i class="fas fa-heart pink-heart"></i>
             <i class="fas fa-heart white-heart"></i>
             <span class="white-line"></span>
-        </div>
+        </div> -->
         <div class="married">
             <p>*** we are getting married ***</p>
         </div>
