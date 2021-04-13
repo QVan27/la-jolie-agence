@@ -543,32 +543,41 @@ html, body {
 }
 
 .gallery {
-	margin: 10px 50px;
+	/* margin: 10px 50px; */
+	width: 100%;
+	padding: 40px 80px;
+	margin: 0 auto;
 }
 
-.gallery img {
+.box-gallery {
+	width: 100%;
+	text-align: center;
+}
+
+.box-gallery img {
 	transition: 1s;
-	padding: 15px;
-	width: 200px;
+	padding: 10px;
+	width: 30%;
 }
 
 .gallery img:hover {
 	filter: grayscale(100%);
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
+/* 
 .boxImg1, .boxImg2, .boxImg3 {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
-.parallax-gallery {
+/* .parallax-gallery {
 	width: 100%;
 	min-height: 300px;
 	position: relative;
-	/* z-index: 1000; */
+	z-index: 1000;
 	background: transparent;
-}
+} */
 
 #jolie-agence {
 	font-family: 'Pacifico';

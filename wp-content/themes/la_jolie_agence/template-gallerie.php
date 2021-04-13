@@ -13,25 +13,27 @@ get_header(); ?>
 </div>
 
 <section class="gallery">
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
-    <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+    <div class="box-gallery">
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+        <a href="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" data-lightbox="mygallery" data-title="Marriage"><img src="<?php echo get_template_directory_uri() . '/asset/img/gallery1.jpg'; ?>" alt=""></a>
+    </div>
 </section>
 
-<div class="parallax-gallery">
+<!-- <div class="parallax-gallery">
     <div id="jolie-agence">
         <div id="save">La</div>
         <div id="the-date">Jolie Agence <i class="fas fa-heart pink-heart"></i></div>
     </div>
-</div>
+</div> -->
 
 
 
