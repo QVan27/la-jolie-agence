@@ -61,22 +61,22 @@ get_header(); ?>
     </div>
 </section>
 
-<section id="third" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() . '/asset/img/parralax1.jpg' ?>">
+<!-- <section id="third" class="">
     <div class="content2">
         <div class="married">
             <p>*** faites nous confiance ***</p>
         </div>
-        <!-- <div class="heart-divider">
+        <div class="heart-divider">
             <span class="white-line"></span>
             <i class="fas fa-heart pink-heart"></i>
             <i class="fas fa-heart white-heart"></i>
             <span class="white-line"></span>
-        </div> -->
+        </div>
         <div id="save-the-date">
             <div id="save">On</div>
             <div id="the-date">s'occupe</div>
             <div id="date">- de <span class="pink-dot">.</span>tout<span class="pink-dot">.</span>-</div>
         </div>
-</section>
+</section> -->
 <?php
 get_footer();
