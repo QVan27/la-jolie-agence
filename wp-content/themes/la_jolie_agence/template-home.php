@@ -61,7 +61,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section id="third" class="parallax-window" data-parallax="scroll" data-image-src="wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg">
+<section id="third" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() . '/asset/img/parralax1.jpg' ?>">
     <div class="content2">
         <div class="married">
             <p>*** faites nous confiance ***</p>
