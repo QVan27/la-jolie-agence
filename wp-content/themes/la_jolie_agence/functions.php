@@ -3,6 +3,7 @@ require get_template_directory() . '/inc/general.php';
 require get_template_directory() . '/inc/func.php';
 
 // Custom 
+require get_template_directory() . '/inc/customs/custom-slider-banner.php';
 
 // Admin 
 

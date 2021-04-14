@@ -2,7 +2,6 @@
 /*
 Template Name: Home
 */
-
 get_header(); ?>
 <section id="banner">
     <div class="flexslider">
@@ -15,19 +14,30 @@ get_header(); ?>
             <div class="married">
                 <p>*** we are getting married ***</p>
             </div>
-            <div class="heart-divider">
+            <!-- <div class="heart-divider">
                 <span class="white-line"></span>
                 <i class="fas fa-heart pink-heart"></i>
                 <i class="fas fa-heart white-heart"></i>
                 <span class="white-line"></span>
-            </div>
+            </div> -->
         </div>
-        <ul class="slides">
-            <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides1.jpg'; ?>" /></li>
-            <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides2.jpg'; ?>" /></li>
-            <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides3.jpg'; ?>" /></li>
-            <li><img src="<?php echo get_template_directory_uri() . '/asset/img/slides4.jpg'; ?>" /></li>
-        </ul>
+        <?php $args = array(
+            'post_type' => 'slider',
+            'post_status' => 'publish',
+            'posts_per_page' => '4',
+            'orderby' => 'date',
+            'order' => 'DESC',
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()) { ?>
+            <ul class="slides">
+                <?php while ($the_query->have_posts()) {
+                    $the_query->the_post();
+                ?>
+                    <li><img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" /></li>
+                <?php } ?>
+            </ul>
+        <?php } ?>
     </div>
 </section>
 
@@ -35,10 +45,10 @@ get_header(); ?>
     <div class="box-content">
         <h1>la jolie agence</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic neque, distinctio facilis animi vero earum nemo, sapiente laudantium ipsa, veniam corrupti placeat. Inventore non aspernatur ad maiores, dolorum amet?</p>
-        <div class="heart-divider">
+        <!-- <div class="heart-divider">
             <i class="fas fa-heart pink-heart"></i>
             <i class="fas fa-heart white-heart"></i>
-        </div>
+        </div> -->
     </div>
     <div class="description">
         <div class="overlay">
@@ -51,7 +61,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section id="third" class="parallax-window" data-parallax="scroll" data-image-src="wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg">
+<!-- <section id="third" class="">
     <div class="content2">
         <div class="married">
             <p>*** faites nous confiance ***</p>
@@ -67,6 +77,6 @@ get_header(); ?>
             <div id="the-date">s'occupe</div>
             <div id="date">- de <span class="pink-dot">.</span>tout<span class="pink-dot">.</span>-</div>
         </div>
-</section>
+</section> -->
 <?php
 get_footer();

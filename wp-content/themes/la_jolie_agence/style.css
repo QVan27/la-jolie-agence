@@ -85,6 +85,7 @@ table {
 /* FONT */
 
 /* COMMON CSS */
+
 html::-webkit-scrollbar {
 	width: 6px;
 }
@@ -521,13 +522,12 @@ html, body {
 /* END OF THIRD */
 
 /* GALLERY */
-#parallax {
 
-		/* transform: translate3d(0px, 0px, 0px); */
-		height: 350px;
-		max-width: 100%;
-		position: relative;
-	
+#parallax {
+	/* transform: translate3d(0px, 0px, 0px); */
+	height: 350px;
+	max-width: 100%;
+	position: relative;
 }
 
 .page-title {
@@ -535,6 +535,7 @@ html, body {
 	color: #fff;
 	padding-top: 90px;
 }
+
 .page-title h1 {
 	font-family: 'Pacifico';
 	color: #fff;
@@ -542,32 +543,41 @@ html, body {
 }
 
 .gallery {
-	margin: 10px 50px;
+	/* margin: 10px 50px; */
+	width: 100%;
+	padding: 40px 80px;
+	margin: 0 auto;
 }
 
-.gallery img {
+.box-gallery {
+	width: 100%;
+	text-align: center;
+}
+
+.box-gallery img {
 	transition: 1s;
-	padding: 15px;
-	width: 200px;
+	padding: 10px;
+	width: 30%;
 }
 
 .gallery img:hover {
 	filter: grayscale(100%);
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
+/* 
 .boxImg1, .boxImg2, .boxImg3 {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
-.parallax-gallery {
+/* .parallax-gallery {
 	width: 100%;
 	min-height: 300px;
 	position: relative;
-	/* z-index: 1000; */
+	z-index: 1000;
 	background: transparent;
-}
+} */
 
 #jolie-agence {
 	font-family: 'Pacifico';
@@ -588,17 +598,22 @@ html, body {
 /* START FOOTER */
 
 .footer {
-	background-color: #B07C4D;
+	/* background-color: #B07C4D; */
 	padding: 50px 0;
 }
 
 .wrapper {
 	padding: 0;
 	text-align: center;
+	height: 25vh;
+	display: flex;
 }
 
 .minibox {
-	display: inline-block;
+	/* display: inline-block; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
@@ -607,11 +622,13 @@ html, body {
 	vertical-align: top;
 	border: none;
 	color: #FFF;
+	height: 100%;
 }
 
 .title-footer {
 	font-size: 1.5em;
 	margin: 0 auto 20px;
+	font-weight: bold;
 }
 
 .text-footer {
@@ -624,30 +641,33 @@ html, body {
 hr {
 	width: 33%;
 	color: #fff;
-	height: 3px;
 	background-color: #fff;
 	border-radius: 5px;
 	margin-bottom: 10%;
 }
 
 .vertical-footer {
-	border-left: 4px solid #FFFF;
-	height: 200px;
+	border-left: 2px solid #FFFF;
+	height: 100%;
 	display: inline-block;
 	border-radius: 5px;
 }
 
-.fab {
+.social-icons i {
 	padding: 2%;
 	color: #fff;
+	transition: all .2s ease-in;
 }
 
-.fab {
-	transition: all .2s ease-in-out;
+.contact {
+	margin-bottom: 2vh;
+	transition: all .2s ease-in;
 }
 
-.fab:hover {
+.social-icons i:hover, .contact:hover {
 	transform: scale(1.1);
+	color: #f0394d;
+	transition: .3s;
 }
 
 /* .box-call { 
@@ -657,17 +677,10 @@ hr {
 	transform: scale(1.1); 
 } */
 
-.contact1 {
-	margin-bottom: 10px;
-}
-
-.contact1:hover {
+/* .contact:hover {
 	transform: scale(1.1);
-}
-
-.contact2:hover {
-	transform: scale(1.1);
-}
+	transition: .3s;
+} */
 
 /* START ABOUT */
 
