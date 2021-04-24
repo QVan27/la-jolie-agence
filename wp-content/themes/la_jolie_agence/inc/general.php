@@ -72,7 +72,7 @@ function la_jolie_agence_scripts()
 	// CSS
 	wp_enqueue_style('la_jolie_agence-style', get_stylesheet_uri(), array(), _S_VERSION);
 	// Animate .css
-	wp_enqueue_style('animate.css', get_template_directory_uri() . '/asset/css/animate.css', array(), _S_VERSION);
+	// wp_enqueue_style('animate.css', get_template_directory_uri() . '/asset/css/animate.css', array(), _S_VERSION);
 	// Flexslider .css
 	wp_enqueue_style('flexslider.css', get_template_directory_uri() . '/asset/css/flexslider.css', array(), _S_VERSION);
 	// LightBox .css
@@ -80,9 +80,10 @@ function la_jolie_agence_scripts()
 	// FontAwesome
 	wp_register_style( 'Font_Awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' );
 	wp_enqueue_style('Font_Awesome');
-	// Locomotive
-	// wp_register_style('locomotive', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css');
-	// wp_enqueue_style('locomotive');
+	// Locomotive Scroll .css
+	wp_register_style( 'locomotiveScroll', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css' );
+	wp_enqueue_style('locomotiveScroll');
+	
 
 	// jQuery
 	wp_deregister_script('jquery');
@@ -92,11 +93,12 @@ function la_jolie_agence_scripts()
 	wp_enqueue_script('flexSliderJs', get_template_directory_uri() . '/asset/js/flexslider-min.js', array(), '1.0.2', true);
 	// LightBox .js
 	wp_enqueue_script('lightBox', get_template_directory_uri() . '/asset/js/lightbox.min.js', array(), '1.0.2', true);
+	// Locomotive Scroll 
+	wp_register_script('locomotiveScroll', 'https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js', null, null, true);
+	wp_enqueue_script('locomotiveScroll');
 	// Parallax .js
 	wp_enqueue_script('parallaxJs', get_template_directory_uri() . '/asset/js/parallax.js', array(), '1.0.2', true);
-	// Smooth Scroll 
-	wp_register_script('smoothScroll', 'https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js', null, null, true);
-	wp_enqueue_script('smoothScroll');
+	
 
 
 	// JS

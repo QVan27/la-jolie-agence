@@ -80,8 +80,93 @@ table {
 
 /* FONT */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+	font-family: 'the_queen_oneregular';
+	src: url('asset/css/fonts/phrase-accroche/thequeenone-regular-webfont.woff2') format('woff2'), url('thequeenone-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_problack';
+	src: url('asset/css/fonts/texte/sourceserifpro-black-webfont.woff2') format('woff2'), url('sourceserifpro-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_problack_italic';
+	src: url('asset/css/fonts/texte/sourceserifpro-blackitalic-webfont.woff2') format('woff2'), url('sourceserifpro-blackitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_probold';
+	src: url('asset/css/fonts/texte/sourceserifpro-bold-webfont.woff2') format('woff2'), url('sourceserifpro-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_probold_italic';
+	src: url('asset/css/fonts/texte/sourceserifpro-bolditalic-webfont.woff2') format('woff2'), url('sourceserifpro-bolditalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_proextralight';
+	src: url('asset/css/fonts/texte/sourceserifpro-extralight-webfont.woff2') format('woff2'), url('sourceserifpro-extralight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_proXLtIt';
+	src: url('asset/css/fonts/texte/sourceserifpro-extralightitalic-webfont.woff2') format('woff2'), url('sourceserifpro-extralightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_proitalic';
+	src: url('asset/css/fonts/texte/sourceserifpro-italic-webfont.woff2') format('woff2'), url('sourceserifpro-italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_prolight';
+	src: url('asset/css/fonts/texte/sourceserifpro-light-webfont.woff2') format('woff2'), url('sourceserifpro-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_prolight_italic';
+	src: url('asset/css/fonts/texte/sourceserifpro-lightitalic-webfont.woff2') format('woff2'), url('sourceserifpro-lightitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_proregular';
+	src: url('asset/css/fonts/texte/sourceserifpro-regular-webfont.woff2') format('woff2'), url('sourceserifpro-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_serif_prosemibold';
+	src: url('asset/css/fonts/texte/sourceserifpro-semibold-webfont.woff2') format('woff2'), url('sourceserifpro-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+
 /* FONT */
 
 /* COMMON CSS */
@@ -99,42 +184,54 @@ html::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 }
 
-html {
-	scroll-behavior: smooth;
+body {
+	overflow-x: hidden;
+	font-family: 'source_serif_proregular';
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
+:root {
+	--beige-color: #f8f5f3;
+	--tabac-color: #bb8131;
+	--bleu-color: #092636;
 }
 
 a {
 	text-decoration: none;
 }
 
+p, a {
+	color: var(--bleu-color);
+}
+
 h1 {
+	font-family: 'source_serif_prosemibold';
 	font-size: 40px;
 	margin: 20px auto;
 	text-transform: uppercase;
 	text-align: center;
-	color: #333333;
+	color: var(--bleu-color);
 }
 
 /* END OF COMMON CSS */
 
 /* STICKY FOOTER */
 
-html, body {
+/* html, body {
+	font-family: 'source_serif_proregular';
 	height: 100%;
 	margin: 0;
-}
+} */
 
+/* 
 .wrap {
-	min-height: 100%;
-	/* Equal to height of footer */
-	/* But also accounting for potential margin-bottom of last child */
-	margin-bottom: -50px;
-}
+	min-height: 100%; */
+
+/* Equal to height of footer */
+
+/* But also accounting for potential margin-bottom of last child */
+
+/* margin-bottom: -50px;
+} */
 
 /* .footer, .push {
 	height: 50px;
@@ -144,16 +241,29 @@ html, body {
 
 /* HEADER */
 
-#header .navbar {
+#header {
+	position: relative;
+	z-index: 1;
+}
+
+.nav-brand {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	width: fit-content;
+	z-index: 11;
+}
+
+.navbar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: transparent;
+	background-color: var(--beige-color);
 }
 
-#header .navbar .container {
+.navbar .container {
 	height: 80px;
 	display: flex;
 	align-items: center;
@@ -161,28 +271,27 @@ html, body {
 	padding: 0 15px;
 }
 
-#header .navbar .nav {
+.navbar .nav {
 	display: flex;
 	align-items: center;
 }
 
-#header .navbar .nav .nav-item {
+.nav-item {
 	margin: 0 30px;
 	text-align: center;
 	text-decoration: none;
-}
-
-.nav-item {
 	position: relative;
 }
 
 .nav-link {
+	font-family: 'source_serif_proregular';
 	font-weight: bold;
-	color: #fff;
+	color: var(--bleu-color);
 	position: relative;
 	padding: 5px 0px;
 	text-transform: uppercase;
 	font-size: 13px;
+	letter-spacing: 1px;
 }
 
 .nav-link:after {
@@ -193,7 +302,7 @@ html, body {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #F0394D;
+	background: var(--tabac-color);
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
@@ -282,6 +391,7 @@ html, body {
 	min-width: 100%;
 	margin: 0 auto;
 	height: 100vh;
+	position: relative;
 }
 
 .flexslider {
@@ -306,9 +416,9 @@ html, body {
 }
 
 #save-the-date {
-	font-family: 'Pacifico';
+	font-family: 'source_serif_problack';
 	width: 50%;
-	color: #fff;
+	color: var(--beige-color);
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -327,7 +437,7 @@ html, body {
 
 .married {
 	width: 55%;
-	color: #fff;
+	color: var(--beige-color);
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -338,8 +448,8 @@ html, body {
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 20px 0;
-	border-top: medium double #fff;
-	border-bottom: medium double #fff;
+	border-top: medium double var(--beige-color);
+	border-bottom: medium double var(--beige-color);
 	letter-spacing: 1.1px;
 }
 
@@ -347,7 +457,7 @@ html, body {
 	width: 10px;
 	height: 8px;
 	display: inline-block;
-	border-top: solid 1px #FFF;
+	border-top: solid 1px var(--beige-color);
 }
 
 .grey-line {
@@ -374,7 +484,7 @@ html, body {
 }
 
 .white-heart {
-	color: #FFF;
+	color: var(--beige-color);
 	font-size: 18px;
 	margin-left: -9px;
 	position: relative;
@@ -394,108 +504,66 @@ html, body {
 /* SECOND */
 
 #second {
-	padding: 140px 0 100px 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #000;
+	display: flex;
 }
 
-.box-content {
-	max-width: 750px;
-	width: 100%;
-	margin: 0 auto;
-	margin-bottom: 70px;
+.second-box-1 {
+	width: 60vw;
+	background-image: url(asset/img/couple.jpg);
+	background-size: cover;
 }
 
-.box-content p {
-	font-size: 15px;
-	line-height: 26px;
-	margin-bottom: 25px;
-	margin-top: 20px;
-	text-align: center;
-	color: #6a6a6a;
+.second-box-2 {
+	background-color: var(--tabac-color);
+	width: 40vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.box-content .heart-divider .white-heart {
-	color: #e1dddd;
-}
-
-.box-content .heart-divider .grey-line {
-	width: 15px;
-	height: 8px;
-	color: #000;
-	margin-left: -15px;
-	display: inline-block;
-	border-top: solid 1px #FFF;
-}
-
-.description {
-	max-width: 750px;
-	width: 100%;
-	margin: 0 auto;
-	margin-bottom: 70px;
-}
-
-/* .description img {
-	width: 100%;
-} */
-
-.overlay {
-	position: relative;
-	width: 100%;
-}
-
-.overlay img {
-	opacity: 1;
-	display: block;
-	width: 100%;
+.second-box-content {
+	width: 37vw;
 	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-}
-
-.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+	transform: translate(-50%, -50%);
 }
 
-.overlay:hover .overlay img {
-	opacity: 0.3;
+.second-box-content h1, .second-box-content p {
+	color: var(--beige-color);
 }
 
-.overlay:hover .middle {
-	opacity: 1;
+.second-box-content h1 {
+	font-family: 'source_serif_problack';
+	font-size: 4em;
+	font-weight: bold;
 }
 
-.text {
-	background-color: transparent;
-	color: #fff;
-	border: 1px solid;
-	padding: 10px 50px;
-	font-size: 16px;
+.second-box-content-p {
+	font-size: 1.4em;
+	line-height: 140%;
+	margin-bottom: 3vh;
+}
+
+.second-box-content a {
+	padding: 2% 4%;
+	background-color: var(--beige-color);
+	font-size: 1.2em;
 	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	letter-spacing: 1px;
+	font-weight: 600;
 }
 
-.text:hover {
-	background-color: #f0394d;
-	color: #fff;
-	border: 1px solid #f0394d;
-}
-
-.link {
-	font-weight: 700;
-	color: #6a6a6a;
-}
-
-.description p {
-	font-size: 15px;
-	line-height: 26px;
-	margin-bottom: 25px;
-	margin-top: 20px;
-	color: #6a6a6a;
+.second-box-content a:hover {
+	box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+	transition: .5s ease-in-out;
+	background-color: var(--tabac-color);
+	color: var(--beige-color);
 }
 
 /* END OF SECOND */
@@ -503,23 +571,152 @@ html, body {
 /* START THIRD */
 
 #third {
-	transform: translate3d(0px, 0px, 0px);
-	height: 500px;
-	max-width: 100%;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #000;
+	display: flex;
 }
 
-.content2 {
-	max-width: 750px;
-	width: 100%;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 2;
-	left: 0;
-	right: 0;
-	top: 5%;
+.third-box-1 {
+	width: 60vw;
+	background-size: cover;
+	background-color: var(--beige-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.third-box-2 {
+	background-image: url(asset/img/adeline.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 40vw;
+}
+
+.third-box-content {
+	width: 50vw;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.third-box-content h2 {
+	color: var(--tabac-color);
+}
+
+.third-box-content h2 {
+	font-family: 'source_serif_problack';
+	font-size: 4em;
+	font-weight: bold;
+	margin-bottom: 3vh;
+}
+
+.third-box-content-p {
+	font-size: 1.2em;
+	line-height: 150%;
+}
+
+.adeline {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.wedding, .adeline {
+	color: var(--bleu-color);
+	margin-bottom: 3vh;
+}
+
+.wedding {
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.italic {
+	font-style: italic;
+	margin-bottom: 6vh;
+}
+
+.tabac {
+	color: var(--tabac-color);
+}
+
+.third-box-content a {
+	padding: 2% 4%;
+	background-color: var(--tabac-color);
+	color: var(--beige-color);
+	font-size: 1.2em;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+.third-box-content a:hover {
+	box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+	transition: .5s ease-in-out;
+	background-color: var(--beige-color);
+	color: var(--tabac-color);
 }
 
 /* END OF THIRD */
+
+/* Start Fourth */
+#fourth {
+	display: flex;
+	min-width: 100vw;
+	min-height: 50vh;
+	background-image: url(asset/img/table.jpg);
+	background-position: 50% 60%;
+	background-size: cover;
+	position: relative;
+}
+
+.appear{
+	opacity:1;
+  }
+
+.fourth-box-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.fourth-box-content h3 {
+	font-size: 1.9em;
+	font-weight: 700;
+	margin-left: -30vw;
+	letter-spacing: 1px;
+}
+.fourth-box-content p {
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	font-weight: 600;
+	color: var(--beige-color);
+}
+
+.push-fourth-content {
+	margin: 18vh 0;
+}
+
+.laj-right {
+	margin-right: -30vw;
+}
+/* end Fourth */
+
+/* Start fifth */
+#fifth {
+	display: flex;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	position: relative;
+	background-color: var(--beige-color);
+}
+
+/* end fifth */
 
 /* GALLERY */
 
@@ -528,17 +725,18 @@ html, body {
 	height: 350px;
 	max-width: 100%;
 	position: relative;
+	/* z-index: 1; */
 }
 
 .page-title {
 	text-align: center;
-	color: #fff;
-	padding-top: 90px;
+	color: var(--beige-color);
+	padding-top: 200px;
 }
 
 .page-title h1 {
-	font-family: 'Pacifico';
-	color: #fff;
+	font-family: '';
+	color: var(--beige-color);
 	font-size: 5em;
 }
 
@@ -546,7 +744,8 @@ html, body {
 	/* margin: 10px 50px; */
 	width: 100%;
 	padding: 40px 80px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	background-color: var(--beige-color);
 }
 
 .box-gallery {
@@ -580,7 +779,7 @@ html, body {
 } */
 
 #jolie-agence {
-	font-family: 'Pacifico';
+	font-family: '';
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -598,64 +797,129 @@ html, body {
 /* START FOOTER */
 
 .footer {
-	/* background-color: #B07C4D; */
-	padding: 50px 0;
+	min-height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-image: url("../la_jolie_agence/asset/img/footer.jpg");
+	background-position: 50% 15%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	filter: contrast(150%);
+	filter: brightness(1);
+}
+
+.opacityFooter {
+	width: 100%;
+	height: 100%;
+	background-color: var(--bleu-color);
+	opacity: .4;
+	position: absolute;
+	z-index: 2;
 }
 
 .wrapper {
-	padding: 0;
-	text-align: center;
-	height: 25vh;
+	padding: 0 2vw;
+	height: 50vh;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.wrapper p, .wrapper a {
+	color: var(--beige-color);
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	font-family: 'source_serif_prolight';
+}
+
+.wrapper a {
+	font-weight: bold;
+}
+
+.wrapper a:hover {
+	color: rgb(0, 1, 12);
+	transition: .3s;
+	transform: scale(2);
+}
+
+.box1, .box2 {
+	position: relative;
+	z-index: 4;
+}
+
+.box1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.box2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: -4vh;
+	margin-top: 8vh;
+}
+
+.box2 ul {
+	width: 80%;
+	margin-top: 2vh;
+	display: flex;
+	justify-content: space-between;
 }
 
 .minibox {
-	/* display: inline-block; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	margin: 0 auto;
-	padding: 0;
+	/* margin: 0 auto; */
 	width: 32%;
 	text-align: center;
 	vertical-align: top;
 	border: none;
-	color: #FFF;
+	color: var(--beige-color);
 	height: 100%;
+	position: relative;
+	z-index: 3;
+}
+
+.minibox p {
+	font-family: 'source_serif_proregular';
 }
 
 .title-footer {
 	font-size: 1.5em;
 	margin: 0 auto 20px;
 	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--bleu-color);
 }
 
 .text-footer {
-	padding: 0 10px;
-	margin: 15px auto 0;
-	color: #fff;
-	/* transition: all .2s ease-in-out;  */
+	color: var(--beige-color);
+	transition: all .2s ease-in-out;
 }
 
-hr {
-	width: 33%;
-	color: #fff;
-	background-color: #fff;
-	border-radius: 5px;
-	margin-bottom: 10%;
+.box-content-footer {
+	line-height: 22px;
 }
 
-.vertical-footer {
-	border-left: 2px solid #FFFF;
-	height: 100%;
-	display: inline-block;
-	border-radius: 5px;
+.box-content-footer img {
+	width: 9vw;
+	background-color: var(--beige-color);
+	padding: 10px;
 }
 
 .social-icons i {
 	padding: 2%;
-	color: #fff;
+	color: var(--beige-color);
 	transition: all .2s ease-in;
 }
 
@@ -666,7 +930,7 @@ hr {
 
 .social-icons i:hover, .contact:hover {
 	transform: scale(1.1);
-	color: #f0394d;
+	color: var(--tabac-color);
 	transition: .3s;
 }
 
@@ -685,40 +949,48 @@ hr {
 /* START ABOUT */
 
 #about {
-	/* transform: translate3d(0px, 0px, 0px); */
-	height: 500px;
-	max-width: 100%;
+	min-height: 60vh;
+	width: 100%;
 	position: relative;
+	z-index: 1;
+	text-align: center;
+	/* background-image: url("../la_jolie_agence/asset/img/parralax-about2.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .content-about {
+	display: inline-block;
 	text-align: center;
 	max-width: 750px;
 	width: 100%;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 2;
-	left: 0;
-	right: 0;
-	bottom: 10%;
-	color: #fff;
+	padding-top: 200px;
+	/* position: absolute;
+	z-index: 2; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	color: var(--beige-color);
 }
 
 #text-about {
-	font-family: 'Pacifico';
+	font-family: '';
 	width: 50%;
-	color: #fff;
+	color: var(--beige-color);
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	font-size: 5em;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .bigbox-about {
 	background-color: #f6f6f6;
 	padding-bottom: 10%;
+	position: relative;
 }
 
 .minibox-content {
@@ -734,7 +1006,7 @@ hr {
 }
 
 .about {
-	color: #B07C4D;
+	color: var(--tabac-color);
 }
 
 .box-content-text {

@@ -3,30 +3,15 @@
 Template Name: Home
 */
 get_header(); ?>
-<section id="banner">
+<section id="banner" data-scroll-section>
     <div class="flexslider">
-        <div class="content">
-            <div id="save-the-date">
-                <div id="save">Save</div>
-                <div id="the-date">The Date</div>
-                <div id="date">- 19<span class="pink-dot">.</span>12<span class="pink-dot">.</span>16 -</div>
-            </div>
-            <div class="married">
-                <p>*** we are getting married ***</p>
-            </div>
-            <!-- <div class="heart-divider">
-                <span class="white-line"></span>
-                <i class="fas fa-heart pink-heart"></i>
-                <i class="fas fa-heart white-heart"></i>
-                <span class="white-line"></span>
-            </div> -->
-        </div>
+
         <?php $args = array(
             'post_type' => 'slider',
             'post_status' => 'publish',
             'posts_per_page' => '4',
             'orderby' => 'date',
-            'order' => 'DESC',
+            'order' => 'ASC',
         );
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()) { ?>
@@ -41,42 +26,53 @@ get_header(); ?>
     </div>
 </section>
 
-<section id="second">
-    <div class="box-content">
-        <h1>la jolie agence</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic neque, distinctio facilis animi vero earum nemo, sapiente laudantium ipsa, veniam corrupti placeat. Inventore non aspernatur ad maiores, dolorum amet?</p>
-        <!-- <div class="heart-divider">
-            <i class="fas fa-heart pink-heart"></i>
-            <i class="fas fa-heart white-heart"></i>
-        </div> -->
-    </div>
-    <div class="description">
-        <div class="overlay">
-            <img src="<?= get_template_directory_uri() . '/asset/img/married.jpg'; ?>" alt="">
-            <div class="middle">
-                <a href="<?= esc_url(home_url('a-propos')); ?>" class="text">À propos</a>
+<section id="second" data-scroll-section>
+    <div class="second-box-1"></div>
+    <div class="second-box-2">
+        <div class="second-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6">
+            <h1>Wedding Planner en Nouvelle Aquitaine</h1>
+            <div class="second-box-content-p">
+                <p>L'agence accompagne les futur(e)s marié (e)s et les mari (é)s
+                    dans la création de leur évènement.
+                </p>
+                <p>a Jolie Agence est spécialisée dans l'organisation de mariag
+                    son expertise, son authenticité et sa créativité vont vous guid
+                    durant les préparatifs.</p>
+                <p>Confiez l'organisation de vos évènements à des professionne
+                    de l'évènementiel, vous pourrez ainsi profitez de votre gran
+                    moment en toute sérénité.
+                </p>
             </div>
+            <a href="#">En savoir plus</a>
         </div>
-        <p><a href="<?= esc_url(home_url('about')); ?>" class="link">Je suis "La Jolie Agence"</a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, esse laboriosam. Commodi nam similique reiciendis eveniet aliquam a facilis optio! Eius corporis veniam a, voluptatum eligendi, sit nulla fuga voluptatibus recusandae quasi necessitatibus eum sint numquam doloribus et aliquid alias.</p>
     </div>
 </section>
+<section id="third" data-scroll-section>
+    <div class="third-box-1">
+        <div class="third-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat="">
+            <h2>Qui sommes nous ?</h2>
+            <p class="adeline">Adeline ROUX - La Jolie Agence</p>
+            <div class="third-box-content-p">
+                <p class="wedding">WEDDING & EVENT PLANNER AU PAYS BASQUE, GIRONDE, CHARENTE-MARITIME ET PARTOUT OU IL Y A DU BONHEUR !</p>
+                <p class="tabac"> La Jolie Agence crée sur mesure chaque évènements afin qu'il soit unique. L'agence possède un carnet d'adresse de professionnels de confiance pour que votre journée soit à votre image et à la hauteur de vos envies!</p>
+                <p class="italic">"Chaque nouvelle rencontre est un voyage"</p>
+            </div>
+            <a href="#">En savoir plus</a>
+        </div>
+    </div>
+    <div class="third-box-2"></div>
+</section>
+<section id="fourth" data-scroll-section>
+    <div class="fourth-box-content">
+        <h3 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-class="appear" data-scroll-repeat="true">WEDDING PLANNER EN NOUVELLE AQUITAINE</h3>
+        <p class="push-fourth-content" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-class="appear" data-scroll-repeat="true">Fermez les yeux... Imaginez...</p>
+        <p class="laj-right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">La Jolie Agence le créer pour vous !</p>
+    </div>
+</section>
+<section id="fifth" data-scroll-section>
+    
+</section>
 
-<!-- <section id="third" class="">
-    <div class="content2">
-        <div class="married">
-            <p>*** faites nous confiance ***</p>
-        </div>
-        <div class="heart-divider">
-            <span class="white-line"></span>
-            <i class="fas fa-heart pink-heart"></i>
-            <i class="fas fa-heart white-heart"></i>
-            <span class="white-line"></span>
-        </div>
-        <div id="save-the-date">
-            <div id="save">On</div>
-            <div id="the-date">s'occupe</div>
-            <div id="date">- de <span class="pink-dot">.</span>tout<span class="pink-dot">.</span>-</div>
-        </div>
-</section> -->
+
 <?php
 get_footer();
