@@ -1,18 +1,4 @@
 $(window).load(function () {
-  // Parallax
-  // $(".parallax-window").parallax({
-  //   imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax1.jpg",
-  // });
-  // $(".parallax-window-about").parallax({
-  //   imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about2.jpg",
-  // });
-  // $(".parallax-window-about").parallax({
-  //   imageSrc: "wp-content/themes/la_jolie_agence/asset/img/parralax-about3.jpg",
-  // });
-  // $(".parallax-gallery").parallax({
-  //   imageSrc:
-  //     "../wp-content/themes/la_jolie_agence/asset/img/parallax.jpg",
-  // });
 
   // Flexslider
   $(".flexslider").flexslider({
@@ -45,8 +31,9 @@ $(window).load(function () {
   });
 });
 
-// var scroll = new SmoothScroll('body', {
-//   speed: 500,
-//   speedAsDuration: true,
-//   // linear: true,
-// });
+// Parallax
+  // $(".third-box-2").parallax({
+  //   imageSrc: "wp-content/themes/la_jolie_agence/asset/img/adeline.jpg",
+  // });
+  
+  $('.third-box-2').parallax({imageSrc: 'wp-content/themes/la_jolie_agence/asset/img/adeline.jpg'});

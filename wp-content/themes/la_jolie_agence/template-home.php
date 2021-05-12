@@ -29,7 +29,7 @@ get_header(); ?>
 <section id="second" data-scroll-section>
     <div class="second-box-1"></div>
     <div class="second-box-2">
-        <div class="second-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6">
+        <div class="second-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="1">
             <h1>Wedding Planner en Nouvelle Aquitaine</h1>
             <div class="second-box-content-p">
                 <p>L'agence accompagne les futur(e)s marié (e)s et les mari (é)s
@@ -49,7 +49,7 @@ get_header(); ?>
 </section>
 <section id="third" data-scroll-section>
     <div class="third-box-1">
-        <div class="third-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat="">
+        <div class="third-box-content" data-scroll="" data-scroll-delay="0.09" data-scroll-speed="1" data-scroll-call="dynamicColor" data-scroll-repeat="">
             <h2>Qui sommes nous ?</h2>
             <p class="adeline">Adeline ROUX - La Jolie Agence</p>
             <div class="third-box-content-p">
@@ -63,14 +63,15 @@ get_header(); ?>
     <div class="third-box-2"></div>
 </section>
 <section id="fourth" data-scroll-section>
+    <div class="overlay-fourth"></div>
     <div class="fourth-box-content">
-        <h3 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-class="appear" data-scroll-repeat="true">WEDDING PLANNER EN NOUVELLE AQUITAINE</h3>
-        <p class="push-fourth-content" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-class="appear" data-scroll-repeat="true">Fermez les yeux... Imaginez...</p>
-        <p class="laj-right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">La Jolie Agence le créer pour vous !</p>
+        <h3>WEDDING PLANNER EN NOUVELLE AQUITAINE</h3>
+        <p class="push-fourth-content">Fermez les yeux... Imaginez...</p>
+        <p class="laj-right">La Jolie Agence le créer pour vous !</p>
     </div>
 </section>
 <section id="fifth" data-scroll-section>
-    
+
 </section>
 
 
