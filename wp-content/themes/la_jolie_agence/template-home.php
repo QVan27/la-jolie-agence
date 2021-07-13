@@ -3,6 +3,7 @@
 Template Name: Home
 */
 get_header(); ?>
+<main>
 <section id="banner" data-scroll-section>
     <div class="flexslider">
 
@@ -64,7 +65,7 @@ get_header(); ?>
     <div class="third-box-2"></div>
 </section>
 
-<section id="fourth" data-scroll-section>
+<section id="fourth" data-scroll-section style="background-image: url(<?= get_template_directory_uri() . '/asset/img/table.jpg' ?>);">
     <div class="overlay-fourth"></div>
     <div class="fourth-box-content">
         <h3>WEDDING PLANNER EN NOUVELLE AQUITAINE</h3>
@@ -89,18 +90,19 @@ get_header(); ?>
                                     }
                                 </style>
                             </div>
-                            <p class="fifth-caption">weeding day</p>
+                            <h3 class="fifth-caption">weeding day</h3>
                         </div>
                         <div class="back">
                             <a href="https://en.wikipedia.org/wiki/Cherry_blossom" target="_blank">
-                                <h1>Organisation complète avec la coordination du Jour J</h1>
+                                <h4>organisation de mariage</h4>
                             </a>
-                            <p class="date">23/07/1997</p>
-                            <p class="description">A cherry blossom is the flower of any of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata, which is called sakura after the Japanese (桜 or 櫻; さくら).</p>
+                            <!-- <p class="date">23/07/1997</p> -->
+                            <p class="description">Venez découvrir les différentes formules qui vous correspondent pour votre mariage: <br>"Organisation Complète ou partielle" <br>"Coordination Jour J " <br>"Elopement " <br><span class="description_span">Barbara Luzynska</span>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="cta-see-more-tabac btn-card-home" href="#">En savoir plus</a>
+                <a class="cta-see-more-tabac btn-card-home" href="#">Voir plus</a>
             </div>
 
             <div class="container-card-flip">
@@ -115,18 +117,24 @@ get_header(); ?>
                                     }
                                 </style>
                             </div>
-                            <p class="fifth-caption">sweet moments</p>
+                            <h3 class="fifth-caption">sweet moments</h3>
                         </div>
                         <div class="back">
                             <a href="https://en.wikipedia.org/wiki/Tulip" target="_blank">
-                                <h1>Tulip</h1>
+                                <h4>Organisation d'évènements</h4>
                             </a>
-                            <p class="date">14/07/2001</p>
-                            <p class="description">Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes. The flowers are usually large, showy and brightly coloured, generally red, yellow, or white.</p>
+                            <!-- <p class="date">14/07/2001</p> -->
+                            <p class="description">Vous souhaitez créer ou
+                                recréer le moment magique à
+                                travers :
+                                <br>"une demande en Mariage"
+                                <br>"Un Renouvellement de vœux"
+                                <br>"Baby Shower"
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="cta-see-more-tabac btn-card-home" href="#">En savoir plus</a>
+                <a class="cta-see-more-tabac btn-card-home" href="#">Voir plus</a>
             </div>
 
             <div class="container-card-flip">
@@ -141,23 +149,53 @@ get_header(); ?>
                                     }
                                 </style>
                             </div>
-                            <p class="fifth-caption">wedding temoins</p>
+                            <h3 class="fifth-caption">wedding temoins</h3>
                         </div>
                         <div class="back">
                             <a href="https://en.wikipedia.org/wiki/Lavandula" target="_blank">
-                                <h1>Lavender</h1>
+                                <h4>Spécial Témoin</h4>
                             </a>
-                            <p class="date">06/08/2004</p>
-                            <p class="description">Lavandula is a genus of 47 known species of flowering plants in the mint family. The most widely cultivated species is often referred to as lavender, and there is a color named for the shade of its the flowers. </p>
+                            <!-- <p class="date">06/08/2004</p> -->
+                            <p class="description">Il est l'heure pour les témoins
+                                de rentrer en scène. Pour
+                                cela, La Jolie Agence vous
+                                propose différents services :
+                                <br>"Enterrement de vie de jeune
+                                fille et de garçon"
+                                <br>"SOS TEMOIN "
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="cta-see-more-tabac btn-card-home" href="#">En savoir plus</a>
+                <a class="cta-see-more-tabac btn-card-home" href="#">Voir plus</a>
             </div>
+            
+
+        </div>
+        <div class="more-services">
+            <p class="p-services">Un évènement, un accompagnement spécifique ? Venez découvrir nos autres services</p>
+            <a class="cta-see-more-tabac btn-card-home" href="#">Découvrir plus de prestations</a>
+
         </div>
     </div>
 </section>
 
+<section id="sixth" data-scroll-section>
+<div class="box-sixth">
+    <div class="img_box-sixth">
+        <style>
+            .img_box-sixth {
+                background: url(<?= get_template_directory_uri() . '/asset/img/list-resize.jpg' ?>) no-repeat center;
+                background-size: cover;
+            }
+        </style>
+    </div>
+    <div class="content_box-sixth"></div>
+    <div class="brown_box-sixth"></div>
+</div>
 
+</section>
+
+</main>
 <?php
 get_footer();

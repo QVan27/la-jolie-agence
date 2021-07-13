@@ -98,6 +98,7 @@ function la_jolie_agence_scripts()
 	wp_enqueue_script('locomotiveScroll');
 	// Parallax .js
 	wp_enqueue_script('parallaxJs', get_template_directory_uri() . '/asset/js/parallax.js', array(), '1.0.2', true);
+	// jarallax
 	
 
 

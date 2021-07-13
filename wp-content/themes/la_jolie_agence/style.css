@@ -203,7 +203,7 @@ p, a {
 	color: var(--bleu-color);
 }
 
-#second, #third, #fifth {
+#second, #third, #fifth, #sixth {
 	padding: 10vh 7%;
 	background-color: var(--beige-color);
 }
@@ -660,7 +660,6 @@ p, a {
 	display: flex;
 	min-width: 100vw;
 	min-height: 50vh;
-	background-image: url(asset/img/table.jpg);
 	background-position: 50% 60%;
 	background-size: cover;
 	position: relative;
@@ -725,6 +724,19 @@ p, a {
 
 .fifth-bigbox-prestation {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.more-services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.p-services {
+	margin: 10vh 0 0 0;
 }
 
 #fifth-content {
@@ -743,12 +755,14 @@ p, a {
 }
 
 .fifth-caption {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 20%;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	text-align: center;
-	padding: 2vh 10px;
 	font-family: 'source_serif_proregular';
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: var(--bleu-color);
 }
@@ -769,10 +783,33 @@ p, a {
 .img-card {
 	height: 80%;
 	background-size: contain;
-	border-radius: 5px;
+	border-radius: 5px 5px 0 0;
 }
 
 /* end fifth */
+
+#sixth {
+	display: flex;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-sixth {
+	height: 80vh;
+	/* background-color: #000; */
+	width: 100%;
+}
+
+.img_box-sixth {
+	width: 49%;
+	height: 80%;
+	background-size: contain;
+}
 
 /* GALLERY */
 
@@ -1111,14 +1148,15 @@ p, a {
 	color: black;
 }
 
-.caption, h1, .date {
+.caption, h4, .date {
 	margin: 0;
 	text-align: center;
 }
 
-.caption, h1 {
-	font-family: "Reenie Beanie", sans-serif;
-	font-size: 1em;
+.caption, h4 {
+	font-family: "source_serif_problack", sans-serif;
+	text-transform: capitalize;
+	font-size: 1.1em;
 	padding: 10px 10px 0 10px;
 }
 
@@ -1127,9 +1165,17 @@ p, a {
 }
 
 .description {
-	font-size: 0.9em;
+	margin: 20px 0 0 0;
+	font-size: 1em;
 	padding: 0 20px 20px 20px;
-	text-align: left;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.description_span {
+	font-size: .9em;
+	font-style: italic;
+	opacity: 90%;
 }
 
 .container-prestation {
@@ -1170,6 +1216,7 @@ p, a {
 
 .back {
 	transform: rotateY(180deg);
+	padding: 2% 2%;
 }
 
 #content {
